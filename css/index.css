@@ -3,6 +3,21 @@
     padding: 0;
 }
 
-#mainTitle {
+.mainTitle {
+    padding: 30px;
     text-align: center;
+}
+
+a:link {
+    color: black;
+    text-decoration: none;
+}
+
+a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+.lists {
+    padding: 10px;
 }
