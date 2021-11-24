@@ -1,5 +1,5 @@
 html {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial;
 }
 
 * {
@@ -8,22 +8,26 @@ html {
 }
 
 body {
-    background: linear-gradient(45deg, #00A2FF, #00FF3C) no-repeat fixed;
+    background: linear-gradient(45deg, white, white, white, #00A2FF, #FC4747, #00FF3C, #5CE8F7) no-repeat fixed;
+    background-size: 800% 800%;
+    animation: setBgColor ease, changeBgColor ease infinite;
+    animation-duration: 5s, 40s;
+    animation-delay: 0s, 5s;
 }
 
 .mainTitle {
     padding: 30px;
     text-align: center;
-    color: aquamarine;
+    color: white;
     font-size: 50px;
 }
 
 a {
-    color: white;
     font-size: 20px;
 }
 
 a:link {
+    color: white;
     text-decoration: none;
 }
 
@@ -39,4 +43,42 @@ a:visited {
 li {
     list-style: none;
     text-align: center;
+}
+
+
+/*keyframes*/
+@keyframes setBgColor {
+    0% {
+        background-position: 0% 50%
+    }
+    100% {
+        background-position: 75% 75%
+    }
+}
+
+@keyframes changeBgColor {
+    0% {
+        background-position: 75% 75%;
+    }
+    25% {
+        background-position: 100% 50%;
+    }
+    50% {
+        background-position: 75% 75%;
+    }
+    75% {
+        background-position: 50%, 100%;
+    }
+    100% {
+        background-position: 75% 75%
+    }
+}
+
+@keyframes changeLinkColor {
+    0% {
+        color: white;
+    }
+    100% {
+        color: grey;
+    }
 }
