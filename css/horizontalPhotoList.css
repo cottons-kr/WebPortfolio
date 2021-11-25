@@ -1,0 +1,29 @@
+html {
+    font-family: Arial;
+    overflow: hidden;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.mainTitle {
+    padding: 30px;
+    text-align: center;
+    color: black;
+    font-size: 50px;
+}
+
+.lists {
+    overflow-x: auto;
+    width: 100%;
+    white-space: nowrap;
+    height: 100px;
+}
+
+li {
+    list-style: none;
+    white-space: nowrap;
+    display: inline-block;
+}
