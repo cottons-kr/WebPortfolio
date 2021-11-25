@@ -46,7 +46,7 @@ li {
     text-align: center;
 }
 
-li:first-child {
+.loadList {
     animation: showLists ease;
     animation-duration: 2s;
     animation-fill-mode: forwards;
